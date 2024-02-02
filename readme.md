@@ -51,4 +51,4 @@ Todos los campos son requeridos y deberán tener un mensaje de error si no se co
 - Deberás correr el comando `json-server --watch db.json` para simular una api rest
 
 ### Extra
-- Puedes añadir validaciones extra a los campos del formulario
+- Puedes añadir validaciones extra a los campos del formulario (por ejemplo que el email sea un email valido)

@@ -1,4 +1,4 @@
-# Exercise react hook forms 🍻
+# Exercise react hook forms 📝
 
 En este ejercicio tendrás que crear una aplicación en React que contenga un formulario para la creacion de posts. 
 

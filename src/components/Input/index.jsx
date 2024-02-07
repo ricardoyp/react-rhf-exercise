@@ -13,11 +13,16 @@ export const TextInput = ({ type, name, placeholder, register, errors }) => {
 
     return (
             <Input
-                type={type}
-                label={placeholder}
-                {...register(name, validationRules)}
-                color={errors[name] ? 'danger' : 'primary'}
-                errorMessage={errors[name] && "This field is required" + (type === 'email' ? " and must be a valid email" : "")}
+                type={ type }
+                label={ placeholder }
+                { ...register(name, validationRules) }
+                color={ errors[name] ? 'danger' : 'primary' }
+                errorMessage={ errors[name] && (
+                    errors[name].type === "required" ? (<span>This field is required</span>) 
+                    : errors[name].type === "pattern" ? (<span>Invalid Email</span>) 
+                    : null
+                )}
+                
             />
     );
 };

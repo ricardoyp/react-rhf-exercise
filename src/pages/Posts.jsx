@@ -29,7 +29,7 @@ export const Posts = () => {
                 >
                     <Card>
                         <CardHeader>
-                            <p className="text-small text-default-500">{post.author}</p>
+                            <p className="text-sm text-default-500">{post.author}</p>
                         </CardHeader>
                         <Divider />
                         <CardBody>

@@ -4,14 +4,14 @@ import { getPostById } from "../API/posts";
 import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 
 export const PostDetail = () => {
-
     const { postId } = useParams();
-
+    
     const { data: postData, isLoading } = useQuery({
-        queryKey: ['postKeyId'],
+        queryKey: ['post', postId],
         queryFn: () => getPostById(postId)  // MUY IMPORTANTE  " () => "
     });
-
+    console.log("postData", postData)
+    
     if (isLoading) {
         return <div>Cargando...</div>;
     }
@@ -20,12 +20,10 @@ export const PostDetail = () => {
         return <div>No hay publicaciones disponibles.</div>;
     }
 
-    console.log("postData", postData)
-
     return (
         <>
-            <div key={postData.id} className="flex flex-col items-center">
-            <Card className="min-w-[400px]">
+            <div className="flex flex-col items-center mt-5">
+            <Card className="min-w-[400px] max-w-[800px]">
                 <CardHeader>
                 <div className="flex flex-col">
                     <p className="text-md">{postData.author}</p>
@@ -38,7 +36,7 @@ export const PostDetail = () => {
                 </CardBody>
                 <Divider />
                 <CardBody>
-                    <p className="text-lg font-bold">{postData.title}</p>
+                    <p className="text-base">{postData.body}</p>
                 </CardBody>
             </Card>
             </div>

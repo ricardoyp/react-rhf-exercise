@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "email": "aROBA@a.es",
+      "body": "aakfenjfe ewfnew wefjn3n4in 3fnjof34",
+      "author": "michael",
+      "title": "First Ttitle"
+    },
+    {
+      "id": 1707391630345,
+      "email": "ricardoyp07@gmail.com",
+      "body": "bofy1",
+      "author": "a",
+      "title": "a"
+    },
+    {
+      "id": 1707391644779,
+      "email": "ricardoyp07@gmail.com",
+      "body": "body2",
+      "author": "a",
+      "title": "a"
+    },
+    {
+      "id": 1707391645052,
+      "email": "ricardoyp07@gmail.com",
+      "body": "body4",
+      "author": "a",
+      "title": "a"
+    },
+    {
+      "id": 1707391683634,
+      "email": "ricardoyp07@gmail.com",
+      "body": "a",
+      "author": "a",
+      "title": "aaa"
+    }
+  ]
+}

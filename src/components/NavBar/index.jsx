@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 export const NavBar = () => {
     return (
         <>
-        <Navbar isBordered>
+        <Navbar isBordered variant="sticky">
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
                     <Link color="foreground" href="/">

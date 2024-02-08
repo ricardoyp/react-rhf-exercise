@@ -1,6 +1,6 @@
 import { Input } from '@nextui-org/react';   // Importamos el componente
 
-export const TextInput = ({ type, name, placeholder, register, errors }) => {
+export const TextInput = ({ type, name, label, register, errors }) => {
     let validationRules = {};
     if (type === 'email') {
         validationRules = {
@@ -14,7 +14,7 @@ export const TextInput = ({ type, name, placeholder, register, errors }) => {
     return (
             <Input
                 type={ type }
-                label={ placeholder }
+                label={ label }
                 { ...register(name, validationRules) }
                 color={ errors[name] ? 'danger' : 'primary' }
                 errorMessage={ errors[name] && (
